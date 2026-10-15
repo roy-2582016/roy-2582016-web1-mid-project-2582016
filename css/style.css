@@ -1,0 +1,304 @@
+/* Reset dasar browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan dasar halaman */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+/* Header */
+header {
+    background: #0b6e4f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Navigasi */
+nav {
+    background: #094f39;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 12px;
+}
+
+/* Link di navigasi */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/* Konten utama */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Tombol ajakan */
+.tombol {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 24px;
+    background: #0b6e4f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+/* Hero: foto dan teks perkenalan */
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.hero-teks h2 {
+    margin-bottom: 12px;
+    color: #0b6e4f;
+}
+
+.hero-teks p {
+    line-height: 1.6;
+}
+
+/* Foto profil bulat di Home */
+.foto-profil {
+    width: 180px;
+    height: 180px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0b6e4f;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Layar lebar: teks di kiri, foto di kanan */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .hero-teks {
+        flex: 1;
+    }
+}
+/* Biodata: foto dan teks profil */
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.foto-biodata {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.profil-teks {
+    text-align: left;
+}
+
+.profil-teks p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Judul bagian di Biodata */
+.profil-teks h2,
+.hobi h2,
+.akademik h2 {
+    margin-bottom: 12px;
+    color: #0b6e4f;
+}
+
+/* Biodata: hobi */
+.hobi,
+.akademik {
+    margin-top: 30px;
+}
+
+.hobi h3 {
+    margin: 16px 0 6px;
+}
+
+.hobi ol,
+.hobi ul {
+    margin-left: 24px;
+    line-height: 1.6;
+}
+
+/* Biodata: tabel akademik */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #999;
+    text-align: left;
+}
+
+th {
+    background: #0b6e4f;
+    color: white;
+}
+
+/* Layar lebar: foto di kiri, teks profil di kanan */
+@media (min-width: 768px) {
+    .profil {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profil-teks {
+        flex: 1;
+    }
+}
+/* My Holiday: cerita liburan */
+.liburan h2 {
+    margin-bottom: 12px;
+    color: #0b6e4f;
+}
+
+.liburan p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+/* My Holiday: galeri foto */
+.galeri {
+    margin-top: 30px;
+}
+
+.galeri h2 {
+    margin-bottom: 12px;
+    color: #0b6e4f;
+}
+
+.galeri-isi {
+    display: flex;
+    flex-wrap: ______;
+    justify-content: ______;
+    align-items: ______;
+    gap: ______;
+}
+
+.galeri-isi figure {
+    flex: 1 1 220px;
+}
+
+.galeri-isi img {
+    display: block;
+    width: 100%;
+    height: ______;
+    object-fit: ______;
+    border-radius: 8px;
+}
+
+.galeri-isi figcaption {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+.galeri-isi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.galeri-isi img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Contact: formulir */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background: #0b6e4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #094f39;
+}
+
+/* Contact: judul dan info kontak */
+.kontak h2,
+.info-kontak h2 {
+    margin-bottom: 12px;
+    color: #0b6e4f;
+}
+
+.kontak p,
+.info-kontak p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.info-kontak {
+    margin-top: 30px;
+}
+
+/* Layar lebar: formulir tidak terlalu lebar */
+@media (min-width: 768px) {
+    form {
+        max-width: 600px;
+    }
+}
